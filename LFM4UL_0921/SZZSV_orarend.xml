@@ -1,0 +1,53 @@
+<?xml version="1.0" encording="utf-8"?>
+
+<orarend>
+	<ora id="GEIAL331-B" tipus="eloadas">
+		<targy nev="Webtechnologiak I."/>
+		<idopont nap="hetfo" tol="12 ora" ig="14 ora"/>
+		<helyszin hely="XXX A1 III. em. 305"/>
+		<oktato nev="Agardi Anita"/>
+		<szak nev="programtervezo informatikus"/>
+	</ora>
+	
+	<ora id="GEIAL331-B" tipus="gyakorlat">
+		<targy nev="Webtechnologiak I."/>
+		<idopont nap="hetfo" tol="17 ora" ig="19 ora"/>
+		<helyszin hely="In/101 In I. e. 101"/>
+		<oktato nev="Kunne Tamas Judit"/>
+		<szak nev="programtervezo informatikus"/>
+	</ora>
+	
+	<ora id="GEIAL332-B" tipus="eloadas">
+		<targy nev="Adatkezeles XML-ben"/>
+		<idopont nap="kedd" tol="12 ora" ig="14 ora"/>
+		<helyszin hely="I A2 fsz"/>
+		<oktato nev="Dr. Bednarik László"/>
+		<szak nev="programtervezo informatikus"/>
+	</ora>
+	
+	<ora id="GEIAL332-B" tipus="gyakorlat">
+		<targy nev="Adatkezeles XML-ben"/>
+		<idopont nap="kedd" tol="10 ora" ig="12 ora"/>
+		<helyszin hely="In/202 In II. em. 202"/>
+		<oktato nev="Dr. Bednarik László"/>
+		<szak nev="programtervezo informatikus"/>
+	</ora>
+	
+	<ora id="GEIAL315-B" tipus="eloadas">
+		<targy nev="Vállalati információs rendszerek fejlesztése"/>
+		<idopont nap="szerda" tol="16 ora" ig="18 ora"/>
+		<helyszin hely="In/103 In I. em. 103"/>
+		<oktato nev="Dr. Sasvári Péter"/>
+		<szak nev="programtervezo informatikus"/>
+	</ora>
+	
+	<ora id="GEIAL315-B" tipus="gyakorlat">
+		<targy nev="Vállalati információs rendszerek fejlesztése"/>
+		<idopont nap="szerda" tol="18 ora" ig="20 ora"/>
+		<helyszin hely="In/103 In I. em. 103"/>
+		<oktato nev="Dr. Sasvári Péter"/>
+		<szak nev="programtervezo informatikus"/>
+	</ora>
+	
+
+</orarend>
