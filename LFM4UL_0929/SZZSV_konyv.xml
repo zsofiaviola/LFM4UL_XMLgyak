@@ -30,10 +30,12 @@
 	
 	<konyv id="3">
 	
-		<cim>Informatika iránytű I. elmélet</cim>
-		<kiadas_ev>2018<kiadas_ev>
-		<kiado>Konyv Kiado</kiado>
-		<szerzo>Peter Csaba</szerzo>
+		<cim>Emelt szintű informatika érettségi - Programozás C++ és C# nyelven</cim>
+		<kiadas_ev>2019<kiadas_ev>
+		<kiado>METROPOLIS MEDIA GROUP</kiado>
+		<szerzo>
+			Magyary Gyula
+		</szerzo>
 	
 	</konyv>
 	
