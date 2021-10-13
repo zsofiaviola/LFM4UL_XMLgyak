@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nevjegykartyak  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="SZZSV_nevjegykartyak.xsd">
+       
+       
+  
+<nevjegykartya>
+		<nev>
+			Szabó Zsófia Viola
+		</nev>
+		<ceg>
+			<nev>
+				Miskolci Egyetem
+			</nev>
+
+			<cim>
+				<iranyitoszam>
+					3515
+				</iranyitoszam>
+				<varos>
+					Miskolc
+				</varos>
+				<utca>
+					
+				</utca>
+				<hazszam>
+				
+				</hazszam>
+			
+			
+			</cim>
+		<telefonszam>
+		
+		</telefonszam>
+		<weblap>
+		
+		</weblap>
+		
+		</ceg>
+		<beosztas>
+		
+		
+		</beosztas>
+		
+		<telefonszam>
+		
+		
+		</telefonszam>
+		
+		<email>
+		
+		</email>
+
+
+
+
+
+</nevjegykartya>     
+      
+</nevjegykartyak>
+            
+   
