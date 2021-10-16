@@ -1,64 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
-<nevjegykartyak  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            xsi:noNamespaceSchemaLocation="SZZSV_nevjegykartyak.xsd">
-       
-       
-  
-<nevjegykartya>
-		<nev>
-			Szabó Zsófia Viola
-		</nev>
+<nevjegykartyak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="SZZSV_nevjegykartya.xsd">
+	
+	<nevjegykartya id="01">
+	
+		<nev>Szabó Zsófia Viola</nev>
+		
 		<ceg>
-			<nev>
-				Miskolci Egyetem
-			</nev>
-
+			<nev>Miskolci Egyetem</nev>
 			<cim>
-				<iranyitoszam>
-					3515
-				</iranyitoszam>
-				<varos>
-					Miskolc
-				</varos>
-				<utca>
-					
-				</utca>
-				<hazszam>
-				
-				</hazszam>
-			
-			
+				<iranyitoszam>3515</iranyitoszam>
+				<varos>Miskolc</varos>
+				<utca>Egyetem út </utca>
+				<hazszam>1</hazszam>
 			</cim>
-		<telefonszam>
-		
-		</telefonszam>
-		<weblap>
-		
-		</weblap>
+		<telefonszam>(06 46) 565 111</telefonszam>
+		<weblap>https://www.uni-miskolc.hu</weblap>
 		
 		</ceg>
-		<beosztas>
 		
+		<beosztas>Hallagtó</beosztas>
 		
-		</beosztas>
+		<telefonszam>06303573577</telefonszam>
 		
-		<telefonszam>
+		<email>zsofiaviola@gmail.com</email>
 		
+	</nevjegykartya>
+	
+	<nevjegykartya id="02">
+	
+		<nev>Katyina Gabriella</nev>
 		
-		</telefonszam>
+		<ceg>
+			<nev>Miskolci Egyetem</nev>
+			<cim>
+				<iranyitoszam>3515</iranyitoszam>
+				<varos>Miskolc</varos>
+				<utca>Egyetem út </utca>
+				<hazszam>1</hazszam>
+			</cim>
+		<telefonszam>(06 46) 565 111</telefonszam>
+		<weblap>https://www.uni-miskolc.hu</weblap>
 		
-		<email>
+		</ceg>
 		
-		</email>
+		<beosztas>Hallagtó</beosztas>
+		
+		<telefonszam>06301234567</telefonszam>
+		
+		<email>katyinagabi@gmail.com</email>
+		
+	</nevjegykartya>
 
 
 
-
-
-</nevjegykartya>     
-      
 </nevjegykartyak>
-            
-   
