@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<users>
+<users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="usersLFM4UL.xsd">
 	<user id="01">
 		<firstname>Zsofia</firstname>
 		<lastname>Szabo</lastname>
-		<profession>info</profession>
+		<profession>proginfo</profession>
 	</user>
 	
 		<user id="02">
