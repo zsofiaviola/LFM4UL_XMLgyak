@@ -35,7 +35,29 @@ public class XPathLFM4UL {
 			document.getDocumentElement().normalize();
 			
 			XPath xPath = XPathFactory.newInstance().newXPath();
-			String expression = "class/student";
+			//1.
+			String expression = "class/student"; 
+			//2.
+			//String expression = "//student[@id='01']";
+			//3.
+			//String expression = "//student";
+			//4.
+			//String expression = "/class/student";
+			//5.
+			//String expression = "/class/student[last()]";
+			//6.
+			//String expression = "/class/student[last()-1]";
+			//7. 
+			//String expression = "/class/student[position()<3]";
+			//8.
+			//String expression = "/class/*";
+			//9.
+			//String expression = "//student[@*]";
+			//10.
+			//String expression = "//*";
+			//11.
+			//String expression = "/class/student[kor>20]";
+			
 			
 			NodeList nodeList = (NodeList) xPath.compile(expression).evaluate(document, XPathConstants.NODESET);
 			
