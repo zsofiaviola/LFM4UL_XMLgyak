@@ -41,16 +41,16 @@ public class DomQueryLFM4UL {
 			
 			//lekérdezések
 			//adatbázis lekérdezés (összes adat)
-			//String expression = "/koromlakkgyarto/*"; //megadjuk az eleresi utat és a csomópont listát
+			String expression = "/koromlakkgyarto/*"; //megadjuk az eleresi utat és a csomópont listát
 			
 			//gyártó adatai
-			String expression = "koromlakkgyarto/gyarto"; 
+			//String expression = "koromlakkgyarto/gyarto"; 
 			
 			//111. számú vásárló lekérdezés
 			//String expression = "//vasarlo[@id='111']";
 			
 			//2500ft feletti kiegészítõ
-			//String expression = "/koromlakkgyarto/kiegeszitok[ar>2500]";
+			//String expression = "/koromlakkgyarto/kiegeszitok[ar>2000]";
 			
 			//utolso ajandek 
 			//String expression = "/koromlakkgyarto/ajandek[last()]";

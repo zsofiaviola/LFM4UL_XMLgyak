@@ -12,6 +12,40 @@
                 <xs:element name="ajandek" type="ajandekTipus" minOccurs="0" maxOccurs="unbounded"/>
             </xs:sequence>
         </xs:complexType>
+        
+        <xs:key name="key1">
+		<xs:selector xpath="vasarlo"/>
+		<xs:field xpath="@ID"/>
+	</xs:key>
+	<xs:key name="key2">
+		<xs:selector xpath="koromlakkok"/>
+		<xs:field xpath="@ID"/>
+	</xs:key>
+	<xs:key name="key3">
+		<xs:selector xpath="kiegeszitok"/>
+		<xs:field xpath="@ID"/>
+	</xs:key>
+	<xs:key name="key4">
+		<xs:selector xpath="ajandek"/>
+		<xs:field xpath="@ID"/>
+	</xs:key>
+	
+	<xs:keyref name="keyref1" refer="key2">
+		<xs:selector xpath="Gyarto/Koromlakkok"/>
+		<xs:field xpath="."/>
+	</xs:keyref>
+	<xs:keyref name="keyref2" refer="key3">
+		<xs:selector xpath="Gyarto/Kiegeszitok"/>
+		<xs:field xpath="."/>
+	</xs:keyref>	
+	<xs:keyref name="keyref3" refer="key4">
+		<xs:selector xpath="Gyarto/Ajandek"/>
+		<xs:field xpath="."/>
+	</xs:keyref>
+	<xs:keyref name="keyref4" refer="key1">
+		<xs:selector xpath="Rendel/Vasarlo"/>
+		<xs:field xpath="."/>
+	</xs:keyref>
     </xs:element>
     
      <xs:complexType name="gyartoTipus">

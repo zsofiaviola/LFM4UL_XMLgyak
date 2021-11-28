@@ -39,12 +39,12 @@ public class DomModifyLFM4UL {
 		
 
 			// ID:1234 körömlakk ár módosítás 2400 ft-ra
-			NodeList nodes = doc.getElementsByTagName("koromlakkok"); //megkapjuk a koromlakkok NodeListet a dokumentumban
-
+			NodeList nodes = doc.getElementsByTagName("koromlakkok"); //Megkapjuk a koromlakkok NodeListet a dokumentumban
+			//for ciklussal vegigmegyunk
 			for (int temp = 0; temp < nodes.getLength(); temp++) {
 				Node node = nodes.item(temp);
 				if (node.getNodeType() == Node.ELEMENT_NODE) {
-					if (node.getAttributes().getNamedItem("ID").getTextContent().equals("1234")) {
+					if (node.getAttributes().getNamedItem("ID").getTextContent().equals("1234")) { //ID alapjan keressuk meg
 						NodeList childNodes = node.getChildNodes();
 						for (int temp2 = 0; temp2 < childNodes.getLength(); temp2++) {
 							Node childNode = childNodes.item(temp2);
@@ -60,12 +60,12 @@ public class DomModifyLFM4UL {
 			}
 
 			// ID:111 vásárló név módosítás
-			nodes = doc.getElementsByTagName("vasarlo");
+			nodes = doc.getElementsByTagName("vasarlo"); //Megkapjuk a vasarlo NodeListet a dokumentumban
 
 			for (int temp = 0; temp < nodes.getLength(); temp++) {
 				Node node = nodes.item(temp);
 				if (node.getNodeType() == Node.ELEMENT_NODE) {
-					if (node.getAttributes().getNamedItem("ID").getTextContent().equals("111")) {
+					if (node.getAttributes().getNamedItem("ID").getTextContent().equals("111")) { //ID alapjan keressuk meg
 						NodeList childNodes = node.getChildNodes();
 						for (int temp2 = 0; temp2 < childNodes.getLength(); temp2++) {
 							Node childNode = childNodes.item(temp2);
@@ -87,7 +87,7 @@ public class DomModifyLFM4UL {
 				Node node = childNodes.item(temp3);
 	            
 				if("ajandek".equals(node.getNodeName()))
-					koromlakkgyarto.removeChild(node);
+					koromlakkgyarto.removeChild(node); //removeChild()-el torles
 			}
 
 			write(doc);

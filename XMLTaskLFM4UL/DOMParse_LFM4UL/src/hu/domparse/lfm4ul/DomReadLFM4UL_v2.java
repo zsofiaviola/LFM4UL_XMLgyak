@@ -19,19 +19,19 @@ public class DomReadLFM4UL {
 	public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException {
 		
 		try {
-		//megadom a file nevet
+		//Megadom a file nevet.
 		File file = new File("xmlLFM4UL.xml");
-		//DOM létrehozása
-		//DocumentBuilderFactorybol megkapjuk a DocumentBuildert
+		//DOM létrehozása.
+		//DocumentBuilderFactorybol megkapjuk a DocumentBuildert.
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder dBuilder = factory.newDocumentBuilder();
 		
 		
-		Document doc = dBuilder.parse(file); //file elemzes
+		Document doc = dBuilder.parse(file); //File elemzés a parse segítségével.
 		doc.getDocumentElement().normalize();
 		
-		System.out.println("Root element: " + doc.getDocumentElement().getNodeName()); //megkapjuk, gyokerelem kiiratasa
-		NodeList nList = (NodeList) doc.getDocumentElement(); //gyerekelemek mentjuk listaba
+		System.out.println("Root element: " + doc.getDocumentElement().getNodeName()); //Megkapjuk, gyokerelem kiiratasa.
+		NodeList nList = (NodeList) doc.getDocumentElement(); //gyerekelemek mentjuk listaba.
 		
 		for (int i = 0; i < nList.getLength(); i++) {
 			Node nNode = nList.item(i);
@@ -40,9 +40,9 @@ public class DomReadLFM4UL {
 			if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 				Element elem = (Element)nNode;
 				//ID kiiratás
-				String ID = elem.getAttribute("ID"); //elem attributumot megkapjuk
+				String ID = elem.getAttribute("ID"); //elem attributumot megkapjuk.
 				System.out.println("ID: " + ID);
-				//tulajdonságok kiiratása (gyerekelemek)
+				//tulajdonságok kiiratása (gyerekelemek).
 				String nodeContent = " ";
 				NodeList childNodes = elem.getChildNodes();
 				for (int j = 0; j < childNodes.getLength(); j++) {
@@ -55,7 +55,7 @@ public class DomReadLFM4UL {
 			System.out.println();	
 			}
 			
-	//hibakezelés
+	//hibakezelés.
 	}catch (SAXException | IOException | ParserConfigurationException e) {
 		System.out.println("Hiba" + e.getMessage());
 		e.printStackTrace();
