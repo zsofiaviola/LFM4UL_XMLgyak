@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="qualified">
+    <xs:element name="koromlakkgyarto">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="gyarto" type="gyartoTipus" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="koromlakkok" type="koromlakkokTipus" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="rendel" type="rendelTipus" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="vasarlo" type="vasarloTipus" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="kiegeszitok" type="kiegeszitokTipus" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="ajandek" type="ajandekTipus" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+     <xs:complexType name="gyartoTipus">
+        <xs:sequence>
+        	<xs:element name="nev" type="xs:string"/>
+        	<xs:element name="informacio" type="informacioTipus"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+     <xs:complexType name="informacioTipus">
+        <xs:sequence>
+            <xs:element name="telefonszam" type="xs:positiveInteger"/>
+            <xs:element name="email" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+     <xs:complexType name="koromlakkokTipus">
+        <xs:sequence>
+            <xs:element name="ar" type="xs:double"/>
+            <xs:element name="nev" type="xs:string"/>
+            <xs:element name="szin" type="xs:string"/>
+            <xs:element name="tipus" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="ID" type="xs:integer"/>
+    </xs:complexType>
+    
+    <xs:complexType name="rendelTipus">
+        <xs:sequence>
+            <xs:element name="datum" type="xs:date"/>
+            <xs:element name="darabszam" type="xs:integer"/>
+        </xs:sequence>
+        <xs:attribute name="ID" type="xs:integer"/>
+    </xs:complexType>
+    
+    <xs:complexType name="vasarloTipus">
+        <xs:sequence>
+            <xs:element name="nev" type="xs:string"/>
+            <xs:element name="elerhetoseg" type="elerhetosegTipus"/>
+        </xs:sequence>
+        <xs:attribute name="ID" type="xs:integer"/>
+    </xs:complexType>
+
+    <xs:complexType name="elerhetosegTipus">
+        <xs:sequence>
+            <xs:element name="lakcim" type="lakcimTipus"/>
+            <xs:element name="telefonszam" type="xs:positiveInteger"/>
+            <xs:element name="email" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="lakcimTipus">
+        <xs:sequence>
+            <xs:element name="iranyitoszam" type="xs:integer"/>
+            <xs:element name="varos" type="xs:string"/>
+            <xs:element name="utca" type="xs:string"/>
+            <xs:element name="hazszam" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+     <xs:complexType name="kiegeszitokTipus">
+        <xs:sequence>
+            <xs:element name="ar" type="xs:double"/>
+            <xs:element name="nev" type="xs:string"/>
+            <xs:element name="szin" type="xs:string"/>
+            <xs:element name="tipus" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="ID" type="xs:integer"/>
+    </xs:complexType>
+    
+     <xs:complexType name="ajandekTipus">
+        <xs:sequence>
+            <xs:element name="ar" type="xs:double"/>
+            <xs:element name="nev" type="xs:string"/>
+            <xs:element name="szin" type="xs:string"/>
+            <xs:element name="tipus" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="ID" type="xs:integer"/>
+    </xs:complexType>
+    
+ 
+ 
+ </xs:schema>

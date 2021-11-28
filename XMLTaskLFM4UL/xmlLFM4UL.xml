@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<koromlakkgyarto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:noNamespaceSchemaLocation="XMLSchemaLFM4UL.xsd">
+<gyarto>
+	<nev>CandyNails</nev>
+	<informacio>
+		<telefonszam>06309876543</telefonszam>
+		<email>candynails@gmail.com</email>
+	</informacio>
+</gyarto>
+<koromlakkok ID="1234">
+        <ar>2600</ar>
+        <nev>Magnet Illusion</nev>
+        <szin>marvany</szin>
+        <tipus>magneses koromlakk</tipus>
+</koromlakkok>
+<koromlakkok ID="1235">
+        <ar>2400</ar>
+        <nev>Digital Illusion</nev>
+        <szin>feher</szin>
+        <tipus>csillogos koromlakk</tipus>
+</koromlakkok>
+<rendel ID="011">
+        <datum>2021-11-20</datum>
+        <darabszam>2</darabszam>
+</rendel>
+<vasarlo ID="111">
+        <nev>Kiss Anna</nev>
+        <elerhetoseg>
+	        <lakcim>
+	            <iranyitoszam>3423</iranyitoszam>
+	            <varos>Tibolddaroc</varos>
+	            <utca>Kacsi</utca>
+	            <hazszam>11</hazszam>
+	        </lakcim>
+	        <telefonszam>06301234567</telefonszam>
+	        <email>kissanna@gmail.com</email>
+        </elerhetoseg>
+</vasarlo>
+<vasarlo ID="222">
+        <nev>Nagy Niki</nev>
+        <elerhetoseg>
+	        <lakcim>
+	            <iranyitoszam>3423</iranyitoszam>
+	            <varos>Tibolddaroc</varos>
+	            <utca>Abranyi</utca>
+	            <hazszam>45</hazszam>
+	        </lakcim>
+	        <telefonszam>06301237863</telefonszam>
+	        <email>nagyniki@gmail.com</email>
+        </elerhetoseg>
+</vasarlo>
+<kiegeszitok ID="2345">
+        <ar>1600</ar>
+        <nev>magnes</nev>
+        <szin>fekete</szin>
+        <tipus>magnes</tipus>
+</kiegeszitok>
+<kiegeszitok ID="2346">
+        <ar>2000</ar>
+        <nev>matricak</nev>
+        <szin>mindenfele</szin>
+        <tipus>matrica</tipus>
+</kiegeszitok>
+<ajandek ID="26">
+        <ar>0</ar>
+        <nev>Sprarkling Crystals</nev>
+        <szin>szinvalto</szin>
+        <tipus>csillam</tipus>
+</ajandek>
+<ajandek ID="27">
+        <ar>0</ar>
+        <nev>Koromdiszito kovek</nev>
+        <szin>kek</szin>
+        <tipus>diszkovek</tipus>
+</ajandek> 
+</koromlakkgyarto>
