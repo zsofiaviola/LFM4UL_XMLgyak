@@ -12,6 +12,7 @@
                         <th>Keresztnév</th>
                         <th>Becenév</th>
                         <th>Kor</th>
+                        <th>fiezetes</th>
                     </tr>
 
                     <xsl:for-each select="class/student">
@@ -21,6 +22,7 @@
                             <td><xsl:value-of select = "vezeteknev"/></td>
                             <td><xsl:value-of select = "becenev"/></td>
                             <td><xsl:value-of select = "kor"/></td>
+                            <td><xsl:value-of select = "fizetes"/></td>
                         </tr>
                     </xsl:for-each>
                 </table>
